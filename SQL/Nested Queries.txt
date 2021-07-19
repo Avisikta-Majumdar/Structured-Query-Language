@@ -1,0 +1,20 @@
+create table Empp (PersonID int,
+    FirstName varchar2(255),
+    Salary int);
+
+
+INSERT INTO Empp VALUES (123, 'Avi', 56000);
+INSERT INTO Empp VALUES (1023, 'Avis', 56400);
+INSERT INTO Empp VALUES (1203, 'Avisi', 54000);
+
+
+select * from Empp;
+
+-- Fetch Max salary
+select max(Salary) from Empp;
+
+--Fetch name of the employee who is getting the highest salary
+-- Nested Queries;
+select FirstName from Empp where Salary=(select max(Salary) from Empp);
+
+
