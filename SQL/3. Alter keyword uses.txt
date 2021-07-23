@@ -1,0 +1,30 @@
+-- Alter is an DDL command which is used to add, rename , modify ,remove columns in an existing table.
+-- Emp_detail table has 3 attributes i)id  ii)name  iii)phno
+
+
+--Add a column
+-- Syntax :- alter table <table_name> add column_name datatype;
+alter table Emp_detail add Salary number;
+
+desc Employee_detail;
+
+
+--Remove a column
+-- Syntax :- alter table <table_name> drop column column_name;
+alter table Emp_detail drop column PhNo;
+
+
+--Modify column(to change datatypes
+-- Syntax :- alter table <table_name> modify column_name datatype;
+alter table Emp_detail modify id varchar(5);
+
+
+--Rename column 
+-- Syntax :- alter table <table_name> rename column old_column_name to new_column_name;
+alter table Emp_detail rename column id to E_id;
+
+
+--Rename Table or schema name
+-- Syntax :- alter table <table_name> rename to  new_column_name;
+alter table Emp_detail rename to  Employee_detail; 
+
