@@ -1,0 +1,5 @@
+--How to add values in a table
+--Syntax:- insert into table_name values(val1,val2,val3);
+insert into Emp_detail values(1,'aM' , 9091);
+insert into Emp_detail values(2,'AAaM' , 91);
+insert into Emp_detail values(3,'AaM' , 90);

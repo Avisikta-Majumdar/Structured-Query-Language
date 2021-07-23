@@ -1,0 +1,8 @@
+---Create table
+CREATE TABLE Emp_detail (
+    id int,
+    name varchar2(10),
+    PhNo number
+);
+-- Describe Emp_detail table
+desc Emp_detail;

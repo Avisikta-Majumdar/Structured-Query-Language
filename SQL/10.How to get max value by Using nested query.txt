@@ -1,0 +1,3 @@
+--How to het the person name whose phone number is highest
+
+select name from Emp_detail where PhNo = (select max(PhNo) from Emp_detail);
