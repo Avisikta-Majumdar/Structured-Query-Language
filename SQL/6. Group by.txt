@@ -1,0 +1,33 @@
+select * from Employee_detail;
+
+--The GROUP BY statement groups rows that have the same values into summary rows, like "find the number of customers in each country".
+
+--  The GROUP BY statement is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(), AVG()) to group the result-set by one or more columns.
+
+--TABLE
+E_ID	NAME	SALARY	DEPT
+  3	AaM	9500	hr
+  2	AAaM	91000	mkt
+  4	QaM	6500	hr
+  1	aM	45000	it
+
+-- to know how many dept available 
+select dept from Employee_detail group by dept;
+--table
+   DEPT
+    hr
+    it
+   mkt
+
+
+--To count how many person is in each dept 
+select count(dept) from Employee_detail group by dept;
+--TABLE
+DEPT	COUNT(*)
+ hr	   2
+ it	   1
+ mkt	   1
+
+
+-- To print dept and count together
+select dept , count(*) from Employee_detail group by dept;
