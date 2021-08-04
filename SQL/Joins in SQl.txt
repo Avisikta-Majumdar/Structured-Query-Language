@@ -1,0 +1,15 @@
+-- create table Department (DepNo varchar2(10) , Name varchar2(10) , ENAME varchar2(6));
+
+insert into Department values ('D1', 'HR', 7839);
+insert into Department values ('D2' , 'IT' , 7698);
+
+
+select * from Emp;
+select * from Department;
+
+
+--Emp & Department this two table joins
+select * from Emp,Department;
+
+select count(Ename) from Emp;
+
